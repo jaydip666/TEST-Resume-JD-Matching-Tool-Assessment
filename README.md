@@ -71,9 +71,6 @@ The system automatically:
 - Streamlit
 - pdfplumber
 - python-docx
-- scikit-learn
-- pandas
-- numpy
 
 ---
 
@@ -289,18 +286,6 @@ View
 
 ---
 
-# 📸 Screenshots
-
-- Home Page
-- Resume Upload
-- Job Description Input
-- Results Dashboard
-- Candidate Ranking
-- Leaderboard
-- Match Analysis
-
----
-
 # 📈 Future Improvements
 
 - OpenAI / Gemini Integration
@@ -344,7 +329,7 @@ View
 
 ---
 
-# 👨‍💻 Author
+# 👨‍💻 Author - Jaydeep Gavare
 
 Developed for the **E2M Solutions AI Intern Practical Assessment**.
 
