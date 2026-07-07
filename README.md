@@ -1,37 +1,66 @@
 # 🤖 E2M Solutions – AI Resume–JD Matching Tool
 
-An AI-powered Resume–Job Description Matching Tool developed as part of the **E2M Solutions AI Intern Practical Assessment**.
+An AI-powered **Resume–Job Description Matching Tool** developed as part of the **E2M Solutions AI Intern Practical Assessment**.
 
-The application analyzes a candidate's resume against a job description, extracts relevant skills, calculates an ATS-style match score, and generates an explainable hiring report using NLP techniques and semantic similarity. Similar resume-matching tools commonly combine text parsing, NLP, and semantic scoring for recruiter-friendly insights. :contentReference[oaicite:0]{index=0}
+This application analyzes a candidate's resume against a job description, extracts relevant skills, calculates an ATS-style match score, performs semantic similarity analysis, and generates an explainable hiring report using NLP techniques.
+
 ---
 
-# 📌 Features
+# ✨ Key Features
 
-- 📄 Upload Resume (.pdf, .docx, .txt)
-- 📝 Paste or Upload Job Description
-- 🧠 Automatic Resume Text Extraction
-- 🔍 Skill Extraction using NLP
-- 📊 ATS Match Score (0–100)
-- 📈 Skill Overlap Analysis
-- 🤝 Semantic Similarity Score
-- ✅ Matched Skills
-- ❌ Missing Skills
-- 💡 Resume Improvement Suggestions
-- 📝 AI-style Narrative Explanation
-- 🎨 Highlighted Resume & JD Skills
-- 🏆 Candidate Ranking (Upload up to 5 resumes and rank candidates)
+## 📄 Resume Analysis
+
+- Upload Resume (.pdf, .docx, .txt)
+- Automatic Resume Text Extraction
+- Resume Preview
+- Resume Skill Extraction
+
+## 📋 Job Description Analysis
+
+- Paste Job Description
+- Upload Job Description (.pdf, .docx, .txt)
+- Automatic JD Parsing
+- Required Skill Detection
+
+## 🤖 AI Matching
+
+- ATS Match Score (0–100)
+- Skill Overlap Analysis
+- Semantic Similarity Score
+- Matched Skills
+- Missing Skills
+- Narrative Explanation
+- Resume Improvement Suggestions
+- Highlighted Resume & JD Skills
+
+## 🏆 Bonus Feature – Candidate Ranking
+
+Upload **one Job Description** and **up to five resumes**.
+
+The system automatically:
+
+- Parses every resume
+- Calculates ATS Match Score
+- Compares all candidates
+- Ranks candidates from best to worst
+- Highlights the Top Candidate
+- Displays a professional leaderboard
+- Shows individual candidate analysis
 
 ---
 
 # 🚀 Tech Stack
 
 ## Frontend
+
 - Streamlit
 
 ## Backend
+
 - Python 3.11+
 
 ## AI / NLP
+
 - TF-IDF
 - Cosine Similarity
 - Regex-based Skill Extraction
@@ -42,61 +71,117 @@ The application analyzes a candidate's resume against a job description, extract
 - Streamlit
 - pdfplumber
 - python-docx
+- scikit-learn
+- pandas
+- numpy
 
 ---
 
 # ⚙️ Project Workflow
 
+## Single Resume Analysis
+
 ```text
 Upload Resume
-        │
-        ▼
+      │
+      ▼
 Extract Resume Text
-        │
-        ▼
-Upload/Paste Job Description
-        │
-        ▼
+      │
+      ▼
+Upload / Paste Job Description
+      │
+      ▼
 Extract Skills
-        │
-        ▼
+      │
+      ▼
 Semantic Similarity
-        │
-        ▼
-Calculate ATS Score
-        │
-        ▼
-Generate Explanation
-        │
-        ▼
+      │
+      ▼
+Calculate ATS Match Score
+      │
+      ▼
+Generate AI Explanation
+      │
+      ▼
 Display Results
+```
+
+## Candidate Ranking
+
+```text
+Upload One Job Description
+            │
+            ▼
+Upload Up To 5 Resumes
+            │
+            ▼
+Extract Resume Text
+            │
+            ▼
+Analyze Every Resume
+            │
+            ▼
+Calculate Individual Scores
+            │
+            ▼
+Rank Candidates
+            │
+            ▼
+Display Leaderboard
 ```
 
 ---
 
 # 📊 Scoring Method
 
-The final score is calculated using:
+The overall score is calculated using:
 
 | Component | Weight |
 |-----------|--------|
 | Skill Overlap | 70% |
 | Semantic Similarity | 30% |
 
-Final Score
+### Formula
 
-```
-ATS Score =
+```text
+Final ATS Score
+
+=
+
 (0.70 × Skill Score)
+
 +
+
 (0.30 × Semantic Similarity)
 ```
 
 ---
 
+# 🏆 Candidate Ranking
+
+The Candidate Ranking module simulates a basic Applicant Tracking System (ATS).
+
+### Leaderboard Includes
+
+- 🥇 Candidate Rank
+- 👤 Candidate Name
+- 📊 Match Score
+- 🎯 Skill Overlap
+- 🤝 Semantic Similarity
+- ✅ Hiring Recommendation
+- 🔍 View Detailed Analysis
+
+Hiring Recommendation:
+
+- Strong Match
+- Moderate Match
+- Weak Match
+
+---
+
 # 📂 Project Structure
 
-```
+```text
 Resume-JD-Matcher/
 
 │── app.py
@@ -115,10 +200,10 @@ Resume-JD-Matcher/
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/resume-jd-matching-tool.git
+git clone https://github.com/your-username/resume-jd-matching-tool.git
 ```
 
-Go inside project
+Go inside the project
 
 ```bash
 cd resume-jd-matching-tool
@@ -130,7 +215,7 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
-Run
+Run the application
 
 ```bash
 streamlit run app.py
@@ -138,20 +223,23 @@ streamlit run app.py
 
 ---
 
-# 📖 How to Use
+# 📖 How To Use
+
+## Single Resume Analysis
 
 ### Step 1
 
-Upload your Resume
+Upload a Resume
 
-Supported formats
+Supported formats:
 
 - PDF
+- DOCX
 - TXT
 
 ### Step 2
 
-Paste or Upload the Job Description.
+Paste or Upload a Job Description.
 
 ### Step 3
 
@@ -166,66 +254,99 @@ View
 - Semantic Similarity
 - Matched Skills
 - Missing Skills
-- Suggestions
 - Narrative Explanation
-
-### Step 5 (Bonus)
-
-Upload up to **5 resumes** to compare candidates and generate a ranked leaderboard.
+- Resume Suggestions
 
 ---
 
-# 📷 Screenshots
+## Candidate Ranking
+
+### Step 1
+
+Open the **Rank Candidates** tab.
+
+### Step 2
+
+Upload one Job Description.
+
+### Step 3
+
+Upload up to **5 resumes**.
+
+### Step 4
+
+Click **Rank Candidates**.
+
+### Step 5
+
+View
+
+- Leaderboard
+- Top Candidate
+- ATS Match Score
+- Hiring Recommendation
+- Detailed Analysis
+
+---
+
+# 📸 Screenshots
 
 - Home Page
 - Resume Upload
+- Job Description Input
 - Results Dashboard
 - Candidate Ranking
+- Leaderboard
 - Match Analysis
 
 ---
 
 # 📈 Future Improvements
 
-- OpenAI/Gemini Integration
-- Resume Section Detection
+- OpenAI / Gemini Integration
 - OCR Support for Scanned PDFs
+- Resume Rewrite Suggestions
+- Download PDF Report
 - GitHub Profile Analysis
 - LinkedIn Profile Import
 - Job URL Parsing
-- Download PDF Report
-- Resume Rewrite Suggestions
 - Multi-language Support
 
 ---
 
 # 🎯 Assessment Coverage
 
-✔ Resume Parsing
+✅ Resume Parsing
 
-✔ Job Description Parsing
+✅ Job Description Parsing
 
-✔ Skill Extraction
+✅ Skill Extraction
 
-✔ ATS Match Score
+✅ ATS Match Score
 
-✔ Semantic Similarity
+✅ Semantic Similarity
 
-✔ Matched Skills
+✅ Matched Skills
 
-✔ Missing Skills
+✅ Missing Skills
 
-✔ Narrative Explanation
+✅ Resume Improvement Suggestions
 
-✔ Resume Suggestions
+✅ Narrative Explanation
 
-✔ Candidate Ranking (Bonus)
+✅ Candidate Ranking
+
+✅ Leaderboard
+
+✅ Hiring Recommendation
+
+✅ Individual Candidate Analysis
 
 ---
 
 # 👨‍💻 Author
 
-Developed as part of the **E2M Solutions AI Intern Practical Assessment**.
+Developed for the **E2M Solutions AI Intern Practical Assessment**.
 
 ---
 
