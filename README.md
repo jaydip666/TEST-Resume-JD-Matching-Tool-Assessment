@@ -3,7 +3,6 @@
 An AI-powered Resume–Job Description Matching Tool developed as part of the **E2M Solutions AI Intern Practical Assessment**.
 
 The application analyzes a candidate's resume against a job description, extracts relevant skills, calculates an ATS-style match score, and generates an explainable hiring report using NLP techniques and semantic similarity. Similar resume-matching tools commonly combine text parsing, NLP, and semantic scoring for recruiter-friendly insights. :contentReference[oaicite:0]{index=0}
-
 ---
 
 # 📌 Features
