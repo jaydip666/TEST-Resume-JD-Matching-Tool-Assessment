@@ -43,9 +43,6 @@ The application analyzes a candidate's resume against a job description, extract
 - Streamlit
 - pdfplumber
 - python-docx
-- scikit-learn
-- pandas
-- NumPy
 
 ---
 
