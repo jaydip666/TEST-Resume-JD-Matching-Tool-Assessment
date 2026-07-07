@@ -1,0 +1,25 @@
+Jane Smith
+AI/ML Enthusiast | Aspiring AI Intern
+
+SUMMARY
+Final-year Computer Science student with hands-on experience in Python and
+machine learning through academic projects and internships.
+
+SKILLS
+Python, Pandas, NumPy, Scikit-learn, SQL, Git, REST API, Streamlit,
+Data Analysis, Data Visualization, basic exposure to Docker and AWS.
+
+PROJECTS
+- Built a resume screening prototype using Python and Scikit-learn to
+  classify candidates based on extracted skills.
+- Created a data visualization dashboard with Power BI for sales analytics.
+- Developed a small Flask API for serving a trained ML model.
+
+EXPERIENCE
+AI Intern (Summer), Local Startup
+- Assisted in building and evaluating machine learning models for
+  classification tasks.
+- Performed data cleaning and exploratory data analysis using Pandas.
+
+SOFT SKILLS
+Strong communication, teamwork, problem solving, and time management.

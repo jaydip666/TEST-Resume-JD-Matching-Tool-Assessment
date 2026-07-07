@@ -1,0 +1,18 @@
+Position: AI Intern
+
+We are looking for a motivated AI Intern to join our team.
+
+REQUIREMENTS (Must-have)
+- Strong knowledge of Python and Machine Learning fundamentals.
+- Required hands-on experience with data analysis using Pandas and NumPy.
+- Must have solid understanding of NLP (Natural Language Processing) concepts.
+- Proficient in SQL and Git/version control.
+
+PREFERRED (Nice-to-have)
+- Familiarity with TensorFlow or PyTorch.
+- Exposure to LangChain, vector databases, or LLM-based applications.
+- Nice to have experience with Docker and cloud platforms like AWS.
+
+SOFT SKILLS
+- Good communication skills required.
+- Strong problem solving and teamwork abilities.
